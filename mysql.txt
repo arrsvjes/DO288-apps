@@ -1,0 +1,49 @@
+
+
+CREATE USER 'todoapp2'@'localhost' IDENTIFIED BY 'redhat123';
+CREATE USER 'todoapp2'@'%' IDENTIFIED BY 'redhat123';
+GRANT ALL PRIVILEGES ON tododb2.* TO 'todoapp2'@'%';
+GRANT ALL PRIVILEGES ON tododb2.* TO 'todoapp2'@'localhost';
+
+
+CREATE USER 'todoapp3'@'localhost' IDENTIFIED BY 'redhat123';
+CREATE USER 'todoapp3'@'%' IDENTIFIED BY 'redhat123';
+GRANT ALL PRIVILEGES ON tododb3.* TO 'todoapp3'@'%';
+GRANT ALL PRIVILEGES ON tododb3.* TO 'todoapp3'@'localhost';
+
+
+
+CREATE USER 'todoapp4'@'localhost' IDENTIFIED BY 'redhat123';
+CREATE USER 'todoapp4'@'%' IDENTIFIED BY 'redhat123';
+GRANT ALL PRIVILEGES ON tododb4.* TO 'todoapp4'@'%';
+GRANT ALL PRIVILEGES ON tododb4.* TO 'todoapp4'@'localhost';
+
+
+CREATE USER 'todoapp5'@'localhost' IDENTIFIED BY 'redhat123';
+CREATE USER 'todoapp5'@'%' IDENTIFIED BY 'redhat123';
+GRANT ALL PRIVILEGES ON tododb5.* TO 'todoapp5'@'%';
+GRANT ALL PRIVILEGES ON tododb5.* TO 'todoapp5'@'localhost';
+
+
+
+
+CREATE USER 'todoapp6'@'localhost' IDENTIFIED BY 'redhat123';
+CREATE USER 'todoapp6'@'%' IDENTIFIED BY 'redhat123';
+GRANT ALL PRIVILEGES ON tododb6.* TO 'todoapp6'@'%';
+GRANT ALL PRIVILEGES ON tododb6.* TO 'todoapp6'@'localhost';
+
+
+CREATE USER 'todoapp7'@'localhost' IDENTIFIED BY 'redhat123';
+CREATE USER 'todoapp7'@'%' IDENTIFIED BY 'redhat123';
+GRANT ALL PRIVILEGES ON tododb7.* TO 'todoapp7'@'%';
+GRANT ALL PRIVILEGES ON tododb7.* TO 'todoapp7'@'localhost';
+
+GRANT ALL PRIVILEGES ON tododb1.* TO 'todoapp1'@'localhost';
+
+
+ALTER USER 'todoapp6'@'%' IDENTIFIED WITH mysql_native_password BY 'redhat123';
+ALTER USER 'todoapp5'@'%' IDENTIFIED WITH mysql_native_password BY 'redhat123';
+ALTER USER 'todoapp4'@'%' IDENTIFIED WITH mysql_native_password BY 'redhat123';
+ALTER USER 'todoapp3'@'%' IDENTIFIED WITH mysql_native_password BY 'redhat123';
+ALTER USER 'todoapp2'@'%' IDENTIFIED WITH mysql_native_password BY 'redhat123';
+ALTER USER 'todoapp1'@'%' IDENTIFIED WITH mysql_native_password BY 'redhat123';
